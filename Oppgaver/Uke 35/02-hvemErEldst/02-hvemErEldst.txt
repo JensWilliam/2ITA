@@ -1,0 +1,35 @@
+#Laget av: Jens William Egeland
+#Dato 26.08.2024
+#Klasse: 2ITA
+
+
+Oppgave Tekst:
+Du skal lage en algoritme som kan sjekke hvem som er eldst av to personer, Henrik og Kari. 
+Programmet skal kunne ta imot alderen til både Henrik og Kari fra brukeren. 
+Programmet skal skrive til skjerm hvem som er eldst eller om de er like gamle. 
+Algoritmen skal først dokumenteres gjennom å skrive løsningen med en pseudokode. 
+Når du har testet logikken i pseudokoden og den er riktig, skal du skrive programmet i Python med bruk av VS code. 
+
+
+
+Psuedo Koden:
+
+Start
+
+Lage 2 variabler, Kari og Henrik, og gjør sånn at bruker kan sette inn en egen verdi/integer, som alder. 
+
+Hvis Henrik er mellom 1 og 120 år gammel OG Kari mellom 1 og 120 år gammel så kjøres koden under  
+    Hvis Kari er eldre enn Henrik   
+        printes "Kari er eldre"
+
+    Hvis Henrik er eldre enn Kari
+        printes "Henrik er eldre"
+
+    Om noe annet    
+        printes "De er like gamle"
+
+
+Hvis ikke
+    printes "alderen må være mellom 1 og 120!"
+
+Slutt

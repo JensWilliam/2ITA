@@ -1,0 +1,53 @@
+# Laget av Jens William Egeland
+# Dato: 26.08.2024
+# Klasse: 2ITA
+
+
+
+Oppgave Tekst:
+Lagen undermappe med navn «Ekstra-01» under mappen «03-Ekstraoppgaver» på ditt arbeidsområde.
+Du skal lage en algoritme som velger to tilfeldige tall mellom 1 og 10. Skriver disse to tallene til skjerm og 
+be brukeren oppgi svaret på multiplikasjonen av disse to tallene. 
+Brukeren skal få 10 tilfeldige multiplikasjonsstykker. 
+Programmet skal telle opp hvor mange rette svar brukeren fikk.
+Dersom brukeren får 10 rette svar, skal programmet svare: «Supert! Du er god!»
+Dersom brukeren får 9 rette svar, skal programmet svare: «Dette var bra!»
+Dersom brukeren får 8 rette svar, skal programmet svare: «Bra, men du kan øve mer!»
+Dersom brukeren får 7 eller mindre rette svar, skal programmet svare: «Du må øve mer»
+Algoritmen skal først dokumenteres gjennom å skrive løsningen med en pseudokode. 
+Når du har testet logikken i pseudokoden og den er riktig, 
+skal du skrive programmet i Python med bruk av VS code.
+
+
+
+Psuedo Kode:
+
+
+Importerer random                # en module som kan hjelåpe med å generere tilfeldige tall. 
+
+riktig_svar = 0                  # en variabel som skal telle antall riktige svar 
+
+lage en for-løkke med range 10
+tall1 = random.randint(1, 10)    # lage 2 variabler inni som skriver ut 2 tilfeldige tall.
+tall2 = random.randint(1, 10)    # bruke (1, 10) som sier at variablene får en integer mellom 1 og 10
+Svar = tall1 * tall2             # Svar blir tall1 * tall2 
+
+Printer ut tall1 * tall2         # da kan bruker se spørsmålet 
+
+input så bruker kan skrive inn svar på tall1 * tall2.
+
+hvis bruker-svar er Svar 
+    riktig_svar =+ 1             #riktig_svar variablen blir +1 for hvert svar som stemmer. 
+
+
+hvis riktig_svar er 10
+    printes "Supert! Du er god!"
+
+Hvis rikig_svar er 9
+    printes "Dette var bra!"
+
+Hvis riktig_svar er 8
+    printes "bra, men du kan øve mer!"
+
+Hvis riktig_svar er noe annet
+    printes "du ,må øve mer"

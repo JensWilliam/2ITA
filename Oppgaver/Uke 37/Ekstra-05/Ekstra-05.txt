@@ -1,0 +1,96 @@
+# Laget av: Jens William Egeland
+# Dato: 10.09.2024
+# Klasse: 2ITA
+
+Oppgavetekst: 
+Du skal arrangere bursdagsfest. Tenk deg at pølser blir levert i pakker av 10 pølser i hver pakke, 
+pølsebrød blir levert i pakker av 8 pølsebrød.
+Lag et program som spør etter hvor mange mennesker som kommer til pølsefesten,
+og hvor mange pølser du regner til hver person.
+
+Programmet skal skrive ut:
+a. Minste antall pakker pølser som kreves.
+b. Minimum antall pakker med pølsebrød som kreves.
+c. Antall pølser som blir til overs.
+d. Antall pølsebrød som blir til overs.
+
+Algoritmen skal først dokumenteres gjennom å skrive løsningen med en pseudokode. 
+Når du har testet logikken i pseudokoden og den er riktig, 
+skal du skrive programmet i Python med bruk av VS code.
+
+
+
+#START
+
+
+antall_folk = int(input("Skriv antall folk som kommer på pølse-festen: "))
+polser_per = int(input("Skriv antall pølser per person: "))
+    #To variabler, som får verdien sin av hva bruker setter inn. 
+
+
+
+polser_totalt = antall_folk * polser_per
+brod_totalt = polser_totalt
+    #polser_totalt er hvor mange pølser det blir totalt. 
+    #brod_totalt er hvir mange pølsebrød det blir totalt, altså samme som totale antall pølser. 
+
+polsepakker = polser_totalt / 10
+brodpakker = brod_totalt / 8
+    #polsepakker deler totale antalle pølser med 10, fordi 10 pølser er 1 pakke. 
+    #brodpakker gjør det samme men deler antall brød totalt på 8, fordi 1 pakke er 8 brød. 
+
+pols = int(polsepakker)
+brod = int(brodpakker)
+    #pols har verdien til polsepakker, men som en int, ikke float. det betyr at hvis polsepakker er 1,3. blir det om til 1. 
+    #brod er det samme bare med brodpakker. 
+
+
+    #Hvis polsepakker er større en pols, f.eks: 1,3 > 1, 
+    #.. så legger jeg på 1, på pols-variabelen.
+    #Det gjør at bruker får beskjed om å kjøpe 2 pakker pølser, og ikke 1,3. 
+if polsepakker > pols:
+    pols += 1
+    print(f"Du trenger {pols} pølsepakker")
+
+else:
+    print(f"Du trenger {pols} pølsepakker")
+    #else.. altså om polsepakker ikke er større en pols (f.eks: polsepakker = 1,0), så har pols samme verdi bare som int..
+    #.. og da printes det at bruker bare trenger 1 pakke pølser. 
+
+
+    #her gjør jeg det samme som over, bare med brød. 
+if brodpakker > brod:
+   brod += 1
+   print(f"Du trenger {brod} brødpakker")
+else:
+    print(f"Du trenger {brod} brødpakker")
+
+
+
+pols *= 10
+brod *= 8
+    #Her ganger jeg pols med 10, sånn at den får antall pølser, ikke pølsepakker.
+    #Samme gjør jeg med brod. 
+
+
+overs_polser = pols - polser_totalt
+overs_brod = brod - brod_totalt
+    #To variabler som skal ha antall brød og pølser til overs. 
+    #pols - polser_totalt, betyr f.eks: 20 - 11
+
+print(f"Du får {overs_polser} pølser til overs")
+print(f"Du får {overs_brod} pølsebrød til overs")
+
+#SLUTT
+
+
+
+
+
+
+
+
+
+
+
+#SLUTT

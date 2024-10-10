@@ -1,0 +1,33 @@
+Laget av Jens William Egeland 
+Dato: 20/08/2024
+
+ 
+01 Bytte innhold kopper
+
+
+Oppgave tekst:
+Du vil lage en algoritme som løser utfordringen med å bytte innhold til to kopper. 
+Algoritmen vil først bli dokumentert ved å skrive løsningen med en pseudokode. 
+Når du har testet logikken i pseudokoden og den er riktig, bør du skrive programmet i Python ved hjelp av VS-kode.
+Både pseudokoden (txt-filen) og Python-koden (py-filen) skal til slutt lastes opp til Teams under oppgaven:
+
+Min løsning:
+Start
+
+
+
+Kopp1 = viskelær
+Kopp2 = binders
+Kopp3 = 
+
+Kopp3 = kopp1
+kopp1 = kopp2
+kopp2 = kopp3
+
+
+Skriv ut verdien av kopp1
+Skriv ut verdien av kopp2
+Skriv ut verdien av kopp3
+
+Slutt 
+

@@ -1,0 +1,37 @@
+# Laget av: Jens William Egeland
+# Dato: 24.09.2024
+# Klasse: 2ITA
+
+Oppgavetekst:
+1. Lag en funkjson som beregner arealet av et rektangel
+2. Lag en funkjson som beregner arealet av en sirkel
+
+
+
+Psuedokode:
+
+#START
+
+# REKTANGEL FUNKSJONEN
+definenerer rektangel funksjonen med parametere: h og b
+    returner h * b
+
+input for høyde
+input for bredde
+
+variabel som putter input-verdiene inn i funkjsonens parametere (h, b)
+
+printer variabelen (siden funksjonen returnerer input1 * input2 til variabelen)
+
+
+# SIRKEL_FUNKSJONEN
+definerer sirkel funksjonen med parameteren: r   
+    returner pi(3.14) * r * r
+
+input for radius (r)
+
+variabel som putter input-verdien inn i funkjsonens parameter (r)
+
+printer variabel over. 
+
+#SLUTT

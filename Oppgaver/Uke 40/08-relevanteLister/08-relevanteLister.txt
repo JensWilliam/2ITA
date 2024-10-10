@@ -1,0 +1,49 @@
+Laget av: Jens William Egeland
+Dato: 04.10.2024
+Klasse: 2ITA
+
+Oppgavetekst:
+
+I oppgave 04 (Gangetabellen) laget dere en algoritme med kun variabler der brukeren 
+kunne oppgi et tall fra 1 til 10 f.eks. tallet 5. 
+Algoritmen skulle skrive ut gangetabellen for tallet 5 til skjerm. 
+Utskriften til skjerm kunne se slik ut:
+
+Her ser du 5 gangen: 
+5 
+10 
+15 
+20 
+25 
+30 
+35 
+40 
+45 
+50
+
+I denne oppgaven skal du ta vare på den aktuelle gangetabellen i en liste. 
+Listen skal skrives til skjerm i slutten av programmet. 
+I denne algoritmen skal du benytte en løkke. 
+Algoritmen skal først dokumenteres gjennom å skrive løsningen med en pseudokode. 
+Når du har testet logikken i pseudokoden og den er riktig, 
+skal du skrive programmet i Python med bruk av VS code.
+
+
+Psuedokode:
+
+#START
+
+liste med gangetall = []
+
+While løkke som går while true:
+    input for ønsket gangetabell
+    for løkke i range(1,11):
+
+        hvis input er større enn 10 ellermindre enn 1:
+            print tallet må være mellom 1 og 10
+            break
+
+        print(input * i) #printer valgte gangetabell gange i, for hver loop.... i øker med 1 per loop, og stopper på 11.
+        legg til (input * i) i liste for hver loop. 
+
+#SLUTT

@@ -1,0 +1,49 @@
+# Laget av: Jens William Egeland
+# Dato: 30.08.2024
+# Klasse: 2ITA
+
+
+Oppgavetekst:
+Du skal lage en algoritme der brukeren skal få 10 spørsmål i en quiz. 
+Spørsmålene må utformes slik at svarene skal bestå av ett ord. 
+Programmet skal etter hvert spørsmål informere brukeren om svaret var rett eller galt. 
+I tillegg skal programmet telle opp alle rette svar. 
+Etter siste spørsmål skal programmet informere brukeren om hvor mange rette han/hun fikk. 
+Algoritmen skal først dokumenteres gjennom å skrive løsningen med en pseudokode. 
+Når du har testet logikken i pseudokoden og den er riktig, skal du skrive programmet i Python med bruk av VS code. 
+
+
+Psuedokode:
+
+START
+
+riktig_svar = 0                                 # Denne variabelen skal telle antall riktige svar brukeren får.
+
+svarene = ["SVAR1", "SVAR2", "SVAR3"]           # En liste som holder alle svarene.  
+
+
+spørsmålene = {                                 # Siden Listen med svarene automatisk gir index [0] til sin første string, (og [1] til den etter osv).. 
+    0: "Spørsmål1: ",                           # .. så navngir jeg key'sa til dictionarien her fra 0 og opp. 
+    1: "Spørsmål2: ",                           # .. da kan [i] på for-loopen hente ut riktig svar OG spørsmål. 
+    2: "Spørsmål3 "
+}
+
+for i in range(0, 10):                              # En for-loop som stopper når i = 10 (når loopen starter er i = 0.)
+    spørsmål = str(input(spørsmålene[i]))           # Siden [i] går opp for hver loop, så henter den ut riktig spørsmål fra dictionary.
+
+    if spørsmål.upper() == svarene[i]:              # .upper() gjør om svaret gitt fra bruker til STORE BOKSTAVER, før den sjekker om det er likt svaret. Da får brukeren fortsatt poeng selvom han skrev svaret i små bokstaver. 
+        print("Riktig svar!")                       # siden [i] går opp for hver loop, så vil den hente ut riktig string fra listen.
+        riktige_svar +=1                            # fikk brukeren rikrig svar så teller variabelen her + 1 "poeng". 
+    else:
+    print("Feil svar!")                             # Gjettet brukeren feil så vil det printes "Feil svar!"
+        
+
+
+print(f"du fikk {riktig_svar} av 10 poeng!)         # Når for-loopen over, vil det printes hvor mange poeng/riktige svar, av antall mulige du fikk. 
+
+SLUTT
+
+NB! 
+Når den gjelder denne oppgaven fikk jeg ikke psuedo koden til å gi 100% mening først, 
+så jeg leste rundt på w3 school til jeg fant ut det med dictionaries osv. 
+

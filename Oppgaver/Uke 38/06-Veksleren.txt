@@ -1,0 +1,76 @@
+# Laget av: Jens William Egeland
+# Dato: 17.09.2024
+# Klasse: 2ITA
+
+
+Oppgavetekst: 
+Du skal lage en algoritme der en kunde får vekslet tilbake penger (kontanter) 
+etter å ha betalt en vare. 
+Programmet skal først ta imot en kjøpesum fra brukeren. 
+Deretter skal brukeren oppgi hva han betaler med, f.eks. 500-lapp, 200-lapp, 100-lapp, osv. 
+Programmet skal deretter regne ut hvor mye penger kunden skal få igjen. 
+I tillegg skal programmet fortelle brukeren hvor mange ulike lapper 
+og mynter han skal få tilbake.
+
+Eksempel
+
+Kjøpe sum: kr 162,-
+
+Betaler med: Kr 200,- (200-lapp)
+
+Penger tilbake til kunden: kr 38,-
+
+Kunden får følgende kontanter tilbake:
+
+1 stk 20-krone-mynt
+
+1 stk 10-krone-mynt
+
+1 stk 5-krone-mynt
+
+3 stk 1-krone-mynter
+
+Algoritmen skal først dokumenteres gjennom å skrive løsningen med en pseudokode. 
+Når du har testet logikken i pseudokoden og den er riktig, 
+skal du skrive programmet i Python med bruk av VS code.
+
+
+Psuedokoden:
+
+#START
+
+input kjops_pris
+input Betalings_lapp
+
+Lapper = antall sedler som trengs for å betale, uten å overstige kjøps-summen.
+
+
+if Betalings_lapp IKKE ER LIK Kjopspris:
+    Lapper += 1
+
+# Om prisen er 50 kr skal man kun trenge 1 50-lapp å betale med, men er prisen 51, trenger man minst 2. 
+
+
+Veksel = Lapper * seddel-verdi minus kjops_pris. 
+
+lager liste/dictionary med gyldig Veksel-penger:
+    1000, "1000-lapp",
+    500, "500-lapp",
+    (seddel, stringtall)
+
+
+For seddel, stringtall in dictionary: #for-løkken looper gjennom seddelene/myntene i dicten. 
+    belop = Veksel // seddel
+        #Variabelen over blir hvor mange seddeler som har plass i Veksel-beløpet. F.EKS: belop = 3200 // 1000. altså belop = 3
+    
+    hvis belop er større enn 0:
+        print(f"Du får tilbake {belop} stk {stringtall}")
+            # den kan f.eks si: "du får 3 stk 1000-lapp"
+    
+    Veksel %= seddel
+    # Det som skjer^: Veksel blir om til det som er igjen, etter at 1000 går opp 3 antall ganger.
+    # Hvis Veksel er 3200, vil det nå bli gjort om til 200. 
+
+
+#SLUTT
+

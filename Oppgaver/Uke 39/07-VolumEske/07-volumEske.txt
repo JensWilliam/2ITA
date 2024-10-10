@@ -1,0 +1,59 @@
+# Laget av: Jens William Egeland
+# Dato: 25.09.2024
+# Klasse: 2ITA
+
+
+Oppgavetekst:
+Du skal lage en algoritme der du finner ut hva som gir størst volum på en eske 
+som du kan brette med et A4-ark (optimalisering). 
+I denne oppgaven skal du lage en funksjon som beregner volumet av esken som beskrevet over. 
+Funksjonen skal ta imot «høyde» på esken som innverdi (argument) og returnere «volum» på esken.
+
+Algoritmen skal først dokumenteres gjennom å skrive løsningen med en pseudokode. 
+Når du har testet logikken i pseudokoden og den er riktig, 
+skal du skrive programmet i Python med bruk av VS code.
+
+
+
+PSUEDOKODE:
+
+#START
+
+# en funkjson som regner ut volum til en boks brettet av a4-ark
+
+funksjonen min(høyde)
+    lengde = 29.7 - høyde * 2
+    bredde = 21 - høyde * 2
+    volum = lengde * bredde * høyde
+    returner volum
+
+
+printer funkjsonen med en input som parameter, siden bruker velger høyden
+
+
+
+#optimaliseringen:
+
+høyde = 0.1  ##dette er variabelen jeg bruker til å sjekke volumet for hver 0.1 cm høyde.
+makshøyde = 21 / 2
+maksvolum = 0
+optimal_høyde = 0
+
+IMENS høyde < makshøyde, kjøres koden under:
+    volum = funksjon(høyde). ##sender høyde verdien til funkjsonens parameter, for å finne volum
+    
+    HVIS volum er større enn maksvolum:
+        maksvolum får verdien til volum. 
+        optimal_høyde får verdien til høyde. 
+
+    ELSE:
+        Break
+
+Printer ut "optimal høyde {optimal_høyde}"
+printer ut "Med optimal høyde får du maks volumet: {maksvolum}"
+
+
+#SLUTT
+
+#NB! denne psuedokoden skrev jeg før jeg la på flere ark-valg på selve koden. 
+#NB! Logikken er fortsatt den samme, men i selve koden kan man nå velge ark. 

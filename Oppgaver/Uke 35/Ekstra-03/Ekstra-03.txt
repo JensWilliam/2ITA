@@ -1,0 +1,34 @@
+# Laget av Jens William Egeland
+# Dato: 27.08.24
+# Klasse: 2ITA
+
+
+Oppgavetekst:
+
+Dette er en videreføring av ekstraoppgave 2. 
+Du skal lage en algoritme der du simulerer å kaste to terninger. 
+Algoritmen skal telle opp hvor mange kast du trenger for å få «to like» terninger.
+Algoritmen skal først dokumenteres gjennom å skrive løsningen med en pseudokode. 
+Når du har testet logikken i pseudokoden og den er riktig, 
+skal du skrive programmet i Python med bruk av VS code.
+
+
+Psuedokode:
+
+START 
+
+import random                                                                       # Importerer random-modulen.
+
+antall_kast = 0                                                                     # Deklarerer en variabel som holder telling på antall kast. 
+
+while True:                                                                         # En while loop som går helt til den bes om å stoppe
+    terning1 = random.randint(1, 6)                                                 # Lager en variabel til hver terning, og tilordner de tilfeldig verdi mellom 1 og 6.
+    terning2 = random.randint(1, 6)
+    antall_kast += 1                                                                # Antall kast går opp med 1.
+
+    if terning1 == terning2:                                                        # Hvis terning1 holder samme verdi som terning2, så printes det antall kast, og at begge terninger landet på ?.
+        print(f"På kast nummer {antall_kast} landet begge terninger på {terning1}!!!")
+        break                                                                       # Her avsluttes loopen
+    
+    print(f"Kast nummer {antall_kast}: Du fikk en {terning1}'er og en {terning2}'er)  #Om terningene ikke landet på samme tall, så printes kast nummeret, og hva de landet på. så kjøres loopen på nytt til de lander på samme. 
+

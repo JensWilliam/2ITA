@@ -1,0 +1,34 @@
+# Laget av Jens William Egeland
+# Dato: 27.08.24
+# Klasse: 2ITA
+
+
+Oppgavetekst:
+
+Du skal lage en algoritme der du simulerer å kaste en terning. 
+Algoritmen skal telle opp hvor mange kast du trenger for å få en sekser.
+Algoritmen skal først dokumenteres gjennom å skrive løsningen med en pseudokode. 
+Når du har testet logikken i pseudokoden og den er riktig, 
+skal du skrive programmet i Python med bruk av VS code.
+
+
+Psuedokode:
+
+START 
+
+Importer random                                 # Jeg importerer en modul som skal tilordne en tilfeldig verdi til en variabel.
+
+Antall_kast = 0                                 # Jeg deklarer en variabel som holder telling på antall kast, den må deklareres over loopen, hvis ikke settes den tilbake til 0 etter hvert kast bare. 
+    
+                                
+loop                                            # Jeg lager en loop som skal gå helt til jeg får 6/stopper den.                                
+    terning_kast = random.randint(1, 6)             # Deklarerer en variabel og tilordner en tilfeldig verdi mellom 1 og 6.
+    Antall_kast += 1                                # Antall kast plusser på 1 for hver loop.
+
+    hvis terning_kast er 6                          # Hvis terningkastet blir 6, 
+        printes("kast nummmer ?: Du rullet 6)           # så printer jeg antall kast og at jeg fikk 6.
+        stopper                                         # Her skal loopen stoppe siden jeg fikk 6.
+    
+    printer antall kast og hva jeg rullet           # Her skal bare resultat og kast nummer printes hvis resultatet ikke er 6.
+
+SLUTT

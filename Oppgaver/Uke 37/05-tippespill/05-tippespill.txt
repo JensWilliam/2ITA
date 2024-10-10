@@ -1,0 +1,49 @@
+# Laget av: Jens William Egeland 
+# Dato: 11.09.2024
+# Klasse: 2ITA
+
+
+Oppgavetekst:
+Du skal lage en algoritme der brukeren skal kunne gjette på et tilfeldig tall mellom 1 til 10. 
+Algoritmen skal i denne oppgaven kun fortelle spilleren om tallet er for høyt eller for lavt. 
+Spillet avsluttes når brukeren har gjettet rett tall. 
+Brukeren skal til slutt få vite hvor mange forsøk han brukte.
+
+Algoritmen skal først dokumenteres gjennom å skrive løsningen med en pseudokode. 
+Når du har testet logikken i pseudokoden og den er riktig, 
+skal du skrive programmet i Python med bruk av VS code.
+
+
+
+Psuedokode:
+
+#START
+
+# NB; kommentarer til høyre ---->
+
+
+import random                                               #en modul som kan tildele tilfeldig verdier.
+
+fasit_tall = tilfeldig tall mellom 1 og 10
+
+antall_forsok = 0   
+
+while True:                                                 #en løkke som går helt til "break" leses. 
+bruker_gjett = ett input felt der bruker kan gjette tall
+antall_forsok += 1                                          #teller 1 forsøk for hver gang loopen går. 
+
+hvis bruker_gjett er samme som fasit_tall:
+    printes: "gratulerer, du gjettet riktig på forsøk nummer {antall_forsok}!"
+    break
+    
+om bruker_gjett er mindre enn fasit_tall:
+    printes: "du gjettet for lavt!"
+
+annet: 
+    printes: "du gjettet for høyt!"
+
+
+
+
+
+#SLUTT

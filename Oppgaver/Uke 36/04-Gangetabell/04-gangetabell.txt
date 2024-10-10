@@ -1,0 +1,52 @@
+# Laget av: Jens William Egeland
+# Dato: 06.09.2024
+# Klasse: 2ITA
+
+
+Oppgavetekst:
+
+Du skal lage en algoritme der brukeren skal kunne oppgi et tall fra 1 til 10 f.eks. tallet 5. 
+Algoritmen skal i denne situasjonen skrive ut gangetabellen for tallet 5. 
+Utskrift til skjerm kan da se slik ut: 
+
+Her ser du 5 gangen:
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+
+I denne algoritmen skal du benytte en løkke. 
+Algoritmen skal først dokumenteres gjennom å skrive løsningen med en pseudokode. 
+Når du har testet logikken i pseudokoden og den er riktig, skal du skrive programmet i Python med bruk av VS code. 
+
+Både pseudokoden (txt-fil) og Python-koden (py-fil) skal til slutt lastes opp i Teams under oppgave:
+
+
+
+
+Psuedokode:
+
+#START
+
+while True:                                                                         # Denne while loopen går evig. det betyr at bruker ikke trenger å kjøre koden på  nytt for å få en ny gangetabell.
+    bruker_tallet = int(input("Skriv tallet du ønsker gangetabell til her: "))      # Her taster brukeren inn tallet han ønsker gangetabellen til. 
+    
+    for i in range(1, 11):                                                          # i-en går gjennom verdiene i rangen for hver loop, den starter på 1 og går helt til 10 før den stopper på 11.
+        
+        if bruker_tallet > 10 or bruker_tallet < 1:                                 # Hvis bruker taster inn et tall over 10 eller under 1, printes det at tallet må være mellom 1 og 10 og så avsluttes for-loopen.
+            print("tallet må være mellom 1 og 10")  
+            break
+        
+        print(bruker_tallet * i)                                                    # Her ganges brukertallet med i, på første loop har i verdi = 1.
+          
+
+
+
+#SLUTT
+
